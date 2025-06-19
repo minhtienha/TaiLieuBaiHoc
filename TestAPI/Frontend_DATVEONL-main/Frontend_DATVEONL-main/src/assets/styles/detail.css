@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles that cannot be converted to Tailwind */
+.movie-banner {
+  @apply w-full h-auto rounded-lg shadow-lg;
+}
+
+.movie-info {
+  @apply p-4;
+}
+
+.btn-red {
+  @apply bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700;
+}
+
+.btn-outline-dark {
+  @apply border border-gray-800 text-gray-800 py-2 px-4 rounded hover:bg-gray-800 hover:text-white;
+}

@@ -1,0 +1,64 @@
+.choose-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seats-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Điều chỉnh số cột tùy theo nhu cầu */
+  gap: 10px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.seat-image {
+  width: 100%;
+  height: 100%;
+}
+
+.seat.regular.available {
+  background-color: #4caf50; /* Màu xanh cho ghế thường trống */
+}
+
+.seat.regular.booked {
+  background-color: #f44336; /* Màu đỏ cho ghế thường đã đặt */
+}
+
+.seat.regular.selected {
+  background-color: #2196f3; /* Màu xanh dương cho ghế thường đã chọn */
+}
+
+.seat.vip.available {
+  background-color: #ff9800; /* Màu cam cho ghế VIP trống */
+}
+
+.seat.vip.booked {
+  background-color: #9c27b0; /* Màu tím cho ghế VIP đã đặt */
+}
+
+.seat.vip.selected {
+  background-color: #2196f3; /* Màu xanh dương cho ghế VIP đã chọn */
+}
+
+.seat.double.available {
+  background-color: #00bcd4; /* Màu xanh ngọc cho ghế đôi trống */
+}
+
+.seat.double.booked {
+  background-color: #e91e63; /* Màu hồng cho ghế đôi đã đặt */
+}
+
+.seat.double.selected {
+  background-color: #2196f3; /* Màu xanh dương cho ghế đôi đã chọn */
+}
